@@ -1,10 +1,10 @@
-.out { padding: 0 10px 128px; min-height: 100%; -webkit-font-smoothing: antialiased; -moz-font-smoothing: antialiased; -ms-font-smoothing: antialiased; -o-font-smoothing: antialiased; background: url(../img/bg-out.png) no-repeat; background-size: cover; }
+.out { padding: 0 10px; min-height: 100%; -webkit-font-smoothing: antialiased; -moz-font-smoothing: antialiased; -ms-font-smoothing: antialiased; -o-font-smoothing: antialiased; background: url(../img/bg-out.png) no-repeat; background-size: cover; }
 .out .center { padding-bottom: 45px; max-width: 1024px; }
 
 .head { height: 90px; color: white; font-size: 16px; font-weight: 300; *zoom: 1; }
 .head:after { content: " "; display: table; clear: both; }
 .head a { color: inherit; text-decoration: underline; }
-.head a:hover { color: #9aca40; }
+.head a:hover { text-decoration: none; color: #9aca40; }
 .head .head__link { float: left; margin-top: 40px; line-height: 1.1; }
 .head .head__right { float: right; *zoom: 1; }
 .head .head__right:after { content: " "; display: table; clear: both; }
@@ -49,5 +49,5 @@
 .timer { font-size: 12px; text-align: right; color: #464d47; font-weight: 300; }
 .timer .timer__counter { color: #2fa5e9; font-weight: 400; }
 
-.n-footer { margin-top: -128px; height: 128px; color: white; font-size: 12px; -webkit-font-smoothing: antialiased; -moz-font-smoothing: antialiased; -ms-font-smoothing: antialiased; -o-font-smoothing: antialiased; font-weight: 300; }
+.n-footer { height: 128px; color: white; font-size: 12px; -webkit-font-smoothing: antialiased; -moz-font-smoothing: antialiased; -ms-font-smoothing: antialiased; -o-font-smoothing: antialiased; font-weight: 300; }
 .n-footer .center { padding-left: 28px; max-width: 1024px; }
