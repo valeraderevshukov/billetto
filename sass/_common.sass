@@ -271,3 +271,121 @@ $dp: #eaf6fd
 	.center
 		padding-left: 28px
 		max-width: 1024px
+
+// btn
+.btn
+	&.btn_red
+		background: red
+		&:hover
+			background: lighten(red, 20%)
+
+// soc-resp
+.soc-resp
+	padding: 3px 0
+	color: #fff
+	+fl
+	font-size: 12px
+	font-style: italic
+	text-align: center
+	background: url(../img/bg-soc-resp.png) no-repeat 50% 0
+	background-size: cover
+	display: block
+	&:hover
+		text-decoration: none
+
+// scroll-top
+.scroll-top
+	position: fixed
+	right: 28px
+	bottom: -63px
+	height: 42px
+	width: 42px
+	opacity: .3
+	cursor: pointer
+	z-index: 2
+	color: #fff
+	will-change: opacity
+	+translate3d(0,0,0)
+	+transition(opacity .2s, bottom .5s, background .2s)
+	border: 2px solid #9aca40
+	+border-radius(50%)
+	background: rgba(#000, .1)
+	display: none
+	&:hover
+		opacity: 1
+		background: rgba(#000, .6)
+	&.is-active
+		bottom: 28px
+	&.is-abs
+		bottom: 49px
+	.scroll-top__ico
+		position: absolute
+		top: 50%
+		left: 50%
+		margin: -7px 0 0 -6px
+
+// cards__field
+.cards 
+	padding: 25px 30px 60px
+	.cards__left
+		margin-top: 112px
+	.cards__right
+		margin-top: 33px
+	.cards__field
+		width: 492px
+		+clr
+		.cards__inf 
+			margin-top: 0
+			float: left
+			&.is-right
+				float: right
+	.cards__wrap
+		margin-top: 27px
+
+.card
+	&.card_cvv
+		padding-right: 38px
+	.card__inf
+		top: 180px
+	.timer
+		position: absolute
+		top: 68px
+		left: 100%
+		width: 240px
+		margin-left: -7px
+
+// cvv
+.cvv
+	margin-top: 94px
+	+clr
+	.cvv__text
+		padding-right: 57px
+	.cvv__input
+		margin-top: 17px
+		width: 100%
+		font-size: 0
+		text-align: right
+		display: block
+		input
+			width: 56px
+			vertical-align: top
+			display: inline-block
+
+// operations
+.operations
+	margin-top: 22px
+	font-size: 12px
+	.operations__text
+		&.is-error
+			color: #ff1901
+
+// inf
+.inf
+	.inf__item
+		margin-top: 15px
+		&:first-child
+			margin-top: 0
+
+// n-footer
+.n-footer
+	height: auto

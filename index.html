@@ -2,88 +2,1013 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Template</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="format-detection" content="telephone=no">
-	<!-- theme color for android 5.0 -->
-	<meta name="theme-color" content="#fff"> 
+	<title>Biletus.kz – Ваши билеты онлайн! Дешевые авиабилеты купить в Казахстане.</title>
+	<link rel="stylesheet" media="all" href="css/screen.css">
+	<link rel="stylesheet" media="all" href="css/style.css">
+	<link rel="stylesheet" media="all" href="css/new.css">
 	<link rel="icon" type="image/png" href="img/favicon.png">
-	<!-- <meta name="viewport" content="width=1200"> -->
-	<!-- <meta name="viewport" content="initial-scale=1, user-scalable=no"> -->
-	<link rel="stylesheet" media="all" href="css/screen.css" >
-	<link rel="stylesheet" media="all" href="css/style.css" >
-	<link rel="stylesheet" media="all" href="css/new.css" >
-	<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
 </head>
 <body>
-<!-- BEGIN  out-->
-<div class="out">
-	<!-- center -->
-	<div class="center">
-		<!-- head -->
-		<header class="head">
-			<a href="#" class="head__link">Отказаться от платежа</a>
-			<div class="head__right">
-				<a href="#" class="logo-a"></a>
-				<div class="head__text">Безопасность этой транзакции <a href="#">гарантирована</a></div>
-			</div>
-		</header>
-		<!-- card -->
-		<div class="cards">
-			<form>
-				<div class="timer">Осталось времени для оплаты <span class="timer__counter">14:47</span></div>
-				<div class="cards__in">
-					<div class="cards__left">
-						<div class="cards__row">Номер карты (16 цифр)</div>
-						<div class="cards__row">Срок действия карты (месяц. год)</div>
-						<div class="cards__row">Владелец карты (латиницей)</div>
+<!-- wrap -->
+<div class="wrap">
+	<!-- bg -->
+	<div class="bg bg_main">
+		<!-- header -->
+		<header class="header">
+			<!-- center -->
+			<div class="center">
+				<div class="header__in">
+					<div class="header__phone" href="tel:88000703886">
+						<i class="icon icon-phone"></i>
+						<span>8 800 070 38 86</span>
 					</div>
-					<div class="cards__right">
-						<div class="cards__inf">Код заказа <span>А453177</span></div>
-						<div class="cards__inf">Сумма к оплате <span>210 100т</span></div>
-						<div class="cards__wrap">
-							<div class="card">
-								<label class="card__label">card number</label>
-								<div class="card__row">
-									<input type="text" placeholder="xxxx  xxxx  xxxx  xxxx">
+					<button class="header__btn js-toggle-btn" data-block="js-contacts">
+						<i class="icon icon-chat"></i>
+						<span>Служба заботы</span>
+						<i class="icon icon-arr-down-think"></i>
+					</button>
+					<a class="header__logo" href="#"></a>
+					<button class="header__btn header__btn_right js-toggle-btn" data-block="js-login">
+						<i class="icon icon-user"></i>
+						<span>Мои билеты и бонусы</span>
+						<i class="icon icon-arr-down-think"></i>
+					</button>
+				</div>
+			</div>
+			<!-- login -->
+			<div class="header__drop js-toggle-el js-login">
+				<!-- center -->
+				<div class="center">
+					<!-- login -->
+					<div class="login">
+						<div class="login__cell">
+							<div class="login__title">ВХОД в АККАУНТ напрямую</div>
+							<div class="login__form">
+								<div class="login__form-cell">
+									<!-- field -->
+									<div class="field">
+										<input class="input" type="text" placeholder="E-mail">
+									</div>
 								</div>
-								<div class="card__row card__row_term">
-									<label class="card__label">EXPIRES END</label>
-									<div class="term"><input type="text" placeholder="mm"></div>
-									<div class="term"><input type="text" placeholder="yy"></div>
+								<div class="login__form-cell">
+									<!-- field -->
+									<div class="field">
+										<input class="input" type="text" placeholder="Пароль">
+									</div>
 								</div>
-								<div class="card__row card__row_name">
-									<label class="card__label">cardholder name</label>
-									<input type="text" placeholder="IVAN IVANOV">
+								<div class="login__form-cell">
+									<button class="btn btn_small">Войти</button>
 								</div>
 							</div>
-							<div class="card card_cvv">
-								<div class="cvv">
-									<div class="cvv__text">
-										<p>CVV2/</p>
-										<p>CVC2/</p>
-										<p>CID</p>
-									</div>
-									<div class="cvv__input">
-										<input type="text" placeholder="xxx">
-									</div>
+							<ul class="login__text">
+								<li>Впервые на сайте? <a href="#"><span>Зарегистрируйтесь</span><i class="icon icon-arr-right"></i></a></li>
+								<li>Я зарегистрирован, но <a href="#"><span>забыл пароль</span><i class="icon icon-arr-right"></i></a></li>
+							</ul>
+						</div>
+						<div class="login__cell">
+							<div class="login__title">ВХОД В АККАУНТ ЧЕРЕЗ СОЦСЕТИ</div>
+							<div class="login__btn">
+								<button class="btn btn_small btn_fb"><i class="icon icon-facebook"></i><span>Facebook</span></button>
+								<button class="btn btn_small btn_vk"><i class="icon icon-vk"></i><span>Вконтакте</span></button>
+							</div>
+							<div class="login__message">Мы не публикуем материалы от Вашего имени, без Вашего ведома.</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- contacts -->
+			<div class="header__drop js-toggle-el js-contacts">
+				<!-- center -->
+				<div class="center">
+					<!-- contacts -->
+					<div class="contacts">
+						<div class="contacts__row">
+							<div class="contacts__cell">
+								<div class="contacts__title">ГОРЯЧАЯ ЛИНИЯ</div>
+								<div class="contacts__text">
+									<div class="contacts__content">Бесплатно со всех<br>стационарных и мобильных<br>телефонов в Казахстане</div>
 								</div>
-								<div class="card__inf">Это 3 цифры на обороте карты</div>
+							</div>
+							<div class="contacts__cell">
+								<div class="contacts__title">ОНЛАЙН-ПОДДЕРЖКА</div>
+								<div class="contacts__text">
+									<div class="contacts__content">Операторы службы заботы<br>доступны ежедневно<br>с 8.00 до 20.00.</div>
+								</div>
+							</div>
+							<div class="contacts__cell">
+								<div class="contacts__title">обратная связь</div>
+								<div class="contacts__text">
+									<div class="contacts__content">Мы ответим на каждое письмо,<br>на каждый вопрос.<br>Ваше мнение - важно! </div>
+								</div>
+							</div>
+							<div class="contacts__cell">
+								<div class="contacts__title">наш Офис</div>
+								<div class="contacts__text">
+									<div class="contacts__content">Республика Казахстан,<br>Алматы, ул. Чайковского 120/64,<br>(уг. ул. Казыбек би), офис 101</div>
+								</div>
+							</div>
+						</div>
+						<div class="contacts__row">
+							<div class="contacts__cell">
+								<span class="contacts__link"><i class="icon icon-phone"></i><span>8 800 070 8 800</span></span>
+							</div>
+							<div class="contacts__cell">
+								<a class="contacts__link" href="#"><i class="icon icon-chat"></i><span>Начать чат с оператором</span></a>
+							</div>
+							<div class="contacts__cell">
+								<a class="contacts__link js-popup-btn" data-popup="js-popup-feedback" href="#"><i class="icon icon-mail"></i><span>Написать нам</span></a>
+							</div>
+							<div class="contacts__cell">
+								<a class="contacts__link js-popup-btn" data-popup="js-popup-map" href="#"><i class="icon icon-marker"></i><span>Показать на карте</span></a>
 							</div>
 						</div>
 					</div>
 				</div>
-				<button class="btn" type="submit">Оплатить</button>
-			</form>
+			</div>
+			<!-- user -->
+			<div class="header__drop header__drop_user js-toggle-el js-user">
+				<!-- center -->
+				<div class="center">
+					<!-- user -->
+					<div class="user">
+						<div class="user__cell">
+							<div class="user__cell user__cell_ava">
+								<span>Нет фото</span>
+							</div>
+							<div class="user__cell user__cell_name">Каширина<br>Светлана Игоревна</div>
+						</div>
+						<div class="user__cell">
+							<div class="user__row">
+								<div class="user__cell">
+									<div class="user__ico">
+										<i class="icon icon-plane"></i>
+									</div>
+									<div class="user__counter">14</div>
+									<div class="user__type">Авиабилетов</div>
+								</div>
+								<div class="user__cell">
+									<div class="user__ico">
+										<i class="icon icon-money"></i>
+									</div>
+									<div class="user__counter">2500</div>
+									<div class="user__type">На личном счете</div>
+								</div>
+								<div class="user__cell">
+									<div class="user__ico">
+										<i class="icon icon-star"></i>
+									</div>
+									<div class="user__counter">400</div>
+									<div class="user__type">Бонусов</div>
+								</div>
+							</div>
+						</div>
+						<div class="user__cell">
+							<ul class="user__btn">
+								<li><button class="btn btn_small btn_ico"><i class="icon icon-user"></i><span>Перейти в кабинет</span></button></li>
+								<li><button class="btn btn_small btn_blue btn_ico"><i class="icon icon-off"></i><span>Выйти из аккаунта</span></button></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- promo -->
+		<div class="promo js-promo">
+			<!-- center -->
+			<div class="center">
+				<div class="promo__in">
+					<div class="promo__title">Пожалуй, лучший сайт<br>для приобретения билетов *</div>
+					<div class="promo__text">Дешевые билеты на самолет? Это дело на 10 минут, если у Вас есть Интернет!</div>
+					<div class="promo__list">
+						<div class="promo__item">
+							<div class="promo__ico">
+								<i class="icon icon-promo-1"></i>
+							</div>
+							<div class="promo__type">Выгодно</div>
+							<div class="promo__desc">Мы возвращаем часть стоимости билета на Ваш личный счет</div>
+						</div>
+						<div class="promo__item">
+							<div class="promo__ico">
+								<i class="icon icon-promo-2"></i>
+							</div>
+							<div class="promo__type">Быстро</div>
+							<div class="promo__desc">Вы потратите 10 минут с банковской картой и интернетом</div>
+						</div>
+						<div class="promo__item">
+							<div class="promo__ico">
+								<i class="icon icon-promo-3"></i>
+							</div>
+							<div class="promo__type">Безопасно</div>
+							<div class="promo__desc">Платежи банковскими картами принимаются “Альфа-Банком”</div>
+						</div>
+						<div class="promo__item">
+							<div class="promo__ico">
+								<i class="icon icon-promo-4"></i>
+							</div>
+							<div class="promo__type">Приятно</div>
+							<div class="promo__desc">Вы помогаете детскому дому, просто покупая билеты</div>
+						</div>
+						<div class="promo__item">
+							<div class="promo__ico">
+								<i class="icon icon-promo-5"></i>
+							</div>
+							<div class="promo__type">Информативно</div>
+							<div class="promo__desc">Погода в аэропортах, статистика задержек рейсов и другие сервисы</div>
+						</div>
+					</div>
+				</div>
+				<button class="promo__close js-promo-close"><span>Скрыть</span><i class="icon icon-close-think"></i></button>
+			</div>
+		</div>
+		<!-- center -->
+		<div class="center center_small">
+			<!-- tabs -->
+			<div class="tabs js-tabs">
+				<div class="tabs__nav">
+					<div class="tabs__nav-in">
+						<a class="is-active js-let-scroll" data-scroll="js-tabs" data-margin="20" href="#"><i class="icon icon-plane"></i><span>Авиабилеты</span></a>
+						<!-- <a href="#"><i class="icon icon-train"></i><span>Билеты на поезд</span></a> -->
+					</div>
+				</div>
+				<div class="tabs__container">
+					<div class="tabs__section">
+						<!-- route -->
+						<div class="route">
+							<div class="route__row route__row_labels">
+								<div class="route__cell">вылет</div>
+								<div class="route__cell">Прилет</div>
+							</div>	
+							<!-- 1 -->
+							<div class="route__row">
+								<div class="route__cell">
+									<!-- mselect -->
+									<div class="mselect js-mselect">
+										<div class="mselect__head">
+											<div class="mselect__value" style="display: block;">
+												<button class="mselect__del" title="Очистить поле">
+													<span>KBP</span>
+													<i class="icon icon-close-round"></i>
+												</button>
+												<div class="mselect__text">Борисполь, <span>Киев, Украина</span></div>
+											</div>
+											<div class="mselect__field" style="display: none;">
+												<input class="input" type="text">
+											</div>
+										</div>
+										<div class="mselect__drop js-mselect-drop">
+											<!-- scroll -->
+											<div class="scroll js-mselect-scroll">
+												<div class="mselect__wrap">
+													<div class="mselect__map">
+														<div class="mselect__btn">
+															<div class="mselect__cell">Найти аэропорт рядом со мной</div>
+															<div class="mselect__cell"><i class="icon icon-marker"></i></div>
+														</div>
+													</div>
+													<div class="mselect__city">
+														<div class="mselect__cell"><span>Лондон,</span> Великобритания</div>
+														<div class="mselect__cell">LND</div>
+													</div>
+													<ul class="mselect__list">
+														<li class="mselect__item">
+															<div class="mselect__cell">Хитроу</div>
+															<div class="mselect__cell">KBP</div>
+														</li>
+														<li class="mselect__item">
+															<div class="mselect__cell">Гатвик</div>
+															<div class="mselect__cell">BOB</div>
+														</li>
+														<li class="mselect__item">
+															<div class="mselect__cell">Stansted</div>
+															<div class="mselect__cell">BOD</div>
+														</li>
+														<li class="mselect__item">
+															<div class="mselect__cell">London City Airport</div>
+															<div class="mselect__cell">zfq</div>
+														</li>
+														<li class="mselect__item">
+															<div class="mselect__cell">Luton Airport</div>
+															<div class="mselect__cell">BOB</div>
+														</li>
+														<li class="mselect__item">
+															<div class="mselect__cell">St Pancras International RailSt</div>
+															<div class="mselect__cell">BOD</div>
+														</li>
+														<li class="mselect__item">
+															<div class="mselect__cell">Саутенд</div>
+															<div class="mselect__cell">zfq</div>
+														</li>
+														<li class="mselect__item">
+															<div class="mselect__cell">Ebbsfleet International Rail Station</div>
+															<div class="mselect__cell">KBP</div>
+														</li>
+														<li class="mselect__item">
+															<div class="mselect__cell">Paddington Railway Station</div>
+															<div class="mselect__cell">BOD</div>
+														</li>
+													</ul>
+													<div class="mselect__city">
+														<div class="mselect__cell"><span>Лондон,</span> Великобритания</div>
+														<div class="mselect__cell">LND</div>
+													</div>
+													<ul class="mselect__list">
+														<li class="mselect__item">
+															<div class="mselect__cell">Хитроу</div>
+															<div class="mselect__cell">KBP</div>
+														</li>
+														<li class="mselect__item">
+															<div class="mselect__cell">Гатвик</div>
+															<div class="mselect__cell">BOB</div>
+														</li>
+														<li class="mselect__item">
+															<div class="mselect__cell">Stansted</div>
+															<div class="mselect__cell">BOD</div>
+														</li>
+														<li class="mselect__item">
+															<div class="mselect__cell">London City Airport</div>
+															<div class="mselect__cell">zfq</div>
+														</li>
+														<li class="mselect__item">
+															<div class="mselect__cell">Luton Airport</div>
+															<div class="mselect__cell">BOB</div>
+														</li>
+														<li class="mselect__item">
+															<div class="mselect__cell">St Pancras International RailSt</div>
+															<div class="mselect__cell">BOD</div>
+														</li>
+														<li class="mselect__item">
+															<div class="mselect__cell">Саутенд</div>
+															<div class="mselect__cell">zfq</div>
+														</li>
+														<li class="mselect__item">
+															<div class="mselect__cell">Ebbsfleet International Rail Station</div>
+															<div class="mselect__cell">KBP</div>
+														</li>
+														<li class="mselect__item">
+															<div class="mselect__cell">Paddington Railway Station</div>
+															<div class="mselect__cell">BOD</div>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- date -->
+									<div class="date js-date">
+										<div class="date__in js-date-btn">
+											<div class="date__ico">
+												<i class="icon icon-date"></i>
+											</div>
+											<div class="date__value js-date-value">Выберите</div>
+										</div>
+										<!-- dp -->
+										<div class="dp js-dp">
+											<div class="dp__head">
+												<div class="dp__row">
+													<div class="dp__cell">
+														<div class="dp__title">выберите дату вылета</div>
+													</div>
+													<div class="dp__cell">
+														<!-- gradio -->
+														<div class="gradio gradio_w250">
+															<label class="gradio__item">
+																<input type="radio" name="r93" checked="">
+																<span class="gradio__in">
+																	<span>Точная дата</span>
+																</span>
+															</label>
+															<label class="gradio__item">
+																<input type="radio" name="r93">
+																<span class="gradio__in">
+																	<span>+/- 3 дня</span>
+																</span>
+															</label>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="dp__in js-dp-el"></div>
+										</div>
+									</div>
+								</div>
+								<div class="route__cell route__cell_center">
+									<!-- gradio -->
+									<div class="gradio">
+										<label class="gradio__item" title="Туда и обратно">
+											<input type="radio" name="r1" checked="">
+											<span class="gradio__in"><i class="icon icon-planes"></i></span>
+										</label>
+										<label class="gradio__item" title="В одну сторону">
+											<input type="radio" name="r1">
+											<span class="gradio__in"><i class="icon icon-plane-right"></i></span>
+										</label>
+									</div>
+								</div>
+								<div class="route__cell route__cell_w45">
+									<!-- mselect -->
+									<div class="mselect">
+										<div class="mselect__head">
+											<div class="mselect__value" style="display: block;">
+												<button class="mselect__del" title="Очистить поле">
+													<span>KBP</span>
+													<i class="icon icon-close-round"></i>
+												</button>
+												<div class="mselect__text">Борисполь, <span>Киев, Украина</span></div>
+											</div>
+											<div class="mselect__field" style="display: none;">
+												<input class="input" type="text">
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- 2 -->
+							<div class="route__row">
+								<div class="route__cell">
+									<!-- mselect -->
+									<div class="mselect">
+										<div class="mselect__head">
+											<div class="mselect__value" style="display: block;">
+												<button class="mselect__del" title="Очистить поле">
+													<span>KBP</span>
+													<i class="icon icon-close-round"></i>
+												</button>
+												<div class="mselect__text">Борисполь, <span>Киев, Украина</span></div>
+											</div>
+											<div class="mselect__field" style="display: none;">
+												<input class="input" type="text">
+											</div>
+										</div>
+									</div>
+									<!-- date -->
+									<div class="date js-date">
+										<div class="date__in js-date-btn">
+											<div class="date__ico">
+												<i class="icon icon-date"></i>
+											</div>
+											<div class="date__value js-date-value">Выберите</div>
+										</div>
+										<!-- dp -->
+										<div class="dp js-dp">
+											<div class="dp__head">
+												<div class="dp__row">
+													<div class="dp__cell">
+														<div class="dp__title">выберите дату вылета</div>
+													</div>
+													<div class="dp__cell">
+														<!-- gradio -->
+														<div class="gradio gradio_w250">
+															<label class="gradio__item">
+																<input type="radio" name="r94" checked="">
+																<span class="gradio__in">
+																	<span>Точная дата</span>
+																</span>
+															</label>
+															<label class="gradio__item">
+																<input type="radio" name="r94">
+																<span class="gradio__in">
+																	<span>+/- 3 дня</span>
+																</span>
+															</label>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="dp__in js-dp-el"></div>
+										</div>
+									</div>
+								</div>
+								<div class="route__cell route__cell_center">
+									<!-- gradio -->
+									<div class="gradio">
+										<label class="gradio__item" title="Туда и обратно">
+											<input type="radio" name="r2" checked="">
+											<span class="gradio__in"><i class="icon icon-planes"></i></span>
+										</label>
+										<label class="gradio__item" title="В одну сторону">
+											<input type="radio" name="r2">
+											<span class="gradio__in"><i class="icon icon-plane-right"></i></span>
+										</label>
+									</div>
+								</div>
+								<div class="route__cell route__cell_w45">
+									<!-- mselect -->
+									<div class="mselect">
+										<div class="mselect__head">
+											<div class="mselect__value" style="display: block;">
+												<button class="mselect__del" title="Очистить поле">
+													<span>KBP</span>
+													<i class="icon icon-close-round"></i>
+												</button>
+												<div class="mselect__text">Борисполь, <span>Киев, Украина</span></div>
+											</div>
+											<div class="mselect__field" style="display: none;">
+												<input class="input" type="text" value="Стамбул, Турция">
+											</div>
+										</div>
+									</div>
+									<!-- date -->
+									<div class="date date_right js-date">
+										<div class="date__in js-date-btn">
+											<div class="date__ico">
+												<i class="icon icon-date"></i>
+											</div>
+											<div class="date__value js-date-value">Выберите</div>
+										</div>
+										<!-- dp -->
+										<div class="dp js-dp">
+											<div class="dp__head">
+												<div class="dp__row">
+													<div class="dp__cell">
+														<div class="dp__title">выберите дату ОБРАТНОГО вылета</div>
+													</div>
+													<div class="dp__cell">
+														<!-- gradio -->
+														<div class="gradio gradio_w250">
+															<label class="gradio__item">
+																<input type="radio" name="r91" checked="">
+																<span class="gradio__in">
+																	<span>Точная дата</span>
+																</span>
+															</label>
+															<label class="gradio__item">
+																<input type="radio" name="r91">
+																<span class="gradio__in">
+																	<span>+/- 3 дня</span>
+																</span>
+															</label>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="dp__in js-dp-el"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- 3 -->
+							<div class="route__row">
+								<div class="route__cell">
+									<!-- mselect -->
+									<div class="mselect">
+										<div class="mselect__head">
+											<div class="mselect__value" style="display: block;">
+												<button class="mselect__del" title="Очистить поле">
+													<span>KBP</span>
+													<i class="icon icon-close-round"></i>
+												</button>
+												<div class="mselect__text">Борисполь, <span>Киев, Украина</span></div>
+											</div>
+											<div class="mselect__field" style="display: none;">
+												<input class="input" type="text">
+											</div>
+										</div>
+									</div>
+									<!-- date -->
+									<div class="date js-date">
+										<div class="date__in js-date-btn">
+											<div class="date__ico">
+												<i class="icon icon-date"></i>
+											</div>
+											<div class="date__value js-date-value">Выберите</div>
+										</div>
+										<!-- dp -->
+										<div class="dp js-dp">
+											<div class="dp__head">
+												<div class="dp__row">
+													<div class="dp__cell">
+														<div class="dp__title">выберите дату вылета</div>
+													</div>
+													<div class="dp__cell">
+														<!-- gradio -->
+														<div class="gradio gradio_w250">
+															<label class="gradio__item">
+																<input type="radio" name="r92" checked="">
+																<span class="gradio__in">
+																	<span>Точная дата</span>
+																</span>
+															</label>
+															<label class="gradio__item">
+																<input type="radio" name="r92">
+																<span class="gradio__in">
+																	<span>+/- 3 дня</span>
+																</span>
+															</label>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="dp__in js-dp-el"></div>
+										</div>
+									</div>
+								</div>
+								<div class="route__cell route__cell_center">
+									<div class="route__plane">
+										<i class="icon icon-plane-right"></i>
+									</div>
+								</div>
+								<div class="route__cell">
+									<button class="btn btn_circle btn_red" title="Удалить этот перелет">
+										<i class="icon icon-close-think"></i>
+									</button>
+									<!-- mselect -->
+									<div class="mselect mselect_mr51">
+										<div class="mselect__head">
+											<div class="mselect__value" style="display: block;">
+												<button class="mselect__del" title="Очистить поле">
+													<span>KBP</span>
+													<i class="icon icon-close-round"></i>
+												</button>
+												<div class="mselect__text">Борисполь, <span>Киев, Украина</span></div>
+											</div>
+											<div class="mselect__field" style="display: none;">
+												<input class="input" type="text" value="Стамбул, Турция">
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- add -->
+							<div class="add">
+								<button class="add__btn">
+									<i class="plus"></i>
+									<span>Добавить еще перелет</span>
+								</button>
+							</div>
+							<div class="route__row route__row_labels">
+								<div class="route__cell">ПАССАЖИРЫ</div>
+								<div class="route__cell">КЛАСС обслуживания</div>
+							</div>
+							<div class="route__row">
+								<div class="route__cell">
+									<!-- people -->
+									<div class="people">
+										<div class="people__item">
+											<div class="people__list">
+												<i class="icon icon-man is-active"></i>
+												<i class="icon icon-man is-active"></i>
+												<i class="icon icon-man"></i>
+												<i class="icon icon-man"></i>
+												<i class="icon icon-man"></i>
+											</div>
+											<div class="people__actions">
+												<button class="plus"></button>
+												<button class="minus"></button>
+											</div>
+											<div class="people__type">Взрослые</div>
+										</div>
+										<div class="people__item">
+											<div class="people__list">
+												<i class="icon icon-adult is-active"></i>
+												<i class="icon icon-adult is-active"></i>
+												<i class="icon icon-adult"></i>
+												<i class="icon icon-adult"></i>
+												<i class="icon icon-adult"></i>
+											</div>
+											<div class="people__actions">
+												<button class="plus"></button>
+												<button class="minus"></button>
+											</div>
+											<div class="people__type">Дети (до 12 лет)</div>
+										</div>
+										<div class="people__item">
+											<div class="people__list">
+												<i class="icon icon-child is-active"></i>
+												<i class="icon icon-child is-active"></i>
+												<i class="icon icon-child"></i>
+												<i class="icon icon-child"></i>
+											</div>
+											<div class="people__actions">
+												<button class="plus"></button>
+												<button class="minus"></button>
+											</div>
+											<div class="people__type">Младенцы (до 2 лет)</div>
+										</div>
+									</div>
+									<div class="route__text">Дети - скидки, младенцы - бесплатно.</div>
+								</div>
+								<div class="route__cell route__cell_padding">
+									<!-- gradio -->
+									<div class="gradio">
+										<label class="gradio__item">
+											<input type="radio" name="r3" checked="">
+											<span class="gradio__in">
+												<span>Любой</span>
+											</span>
+										</label>
+										<label class="gradio__item">
+											<input type="radio" name="r3">
+											<span class="gradio__in">
+												<span>Эконом</span>
+											</span>
+										</label>
+										<label class="gradio__item">
+											<input type="radio" name="r3">
+											<span class="gradio__in">
+												<span>Бизнес</span>
+											</span>
+										</label>
+									</div>
+								</div>
+							</div>
+							<div class="route__btn">
+								<button class="btn">Найти билеты</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- center -->
+		<div class="center">
+			<!-- companies -->
+			<div class="companies">
+				<div class="companies__title">Мы сотрудничаем с ведущими авиакомпаниями Азии, Европы и всего мира.<br>Среди наших партнеров более 500 лучших авиаперевозчиков, включая лоукостеров</div>
+				<div class="companies__sl js-companies">
+					<div class="companies__logo">
+						<img src="img/s7airlines.png" alt="">
+					</div>
+					<div class="companies__logo">
+						<img src="img/s7airlines.png" alt="">
+					</div>
+					<div class="companies__logo">
+						<img src="img/s7airlines.png" alt="">
+					</div>
+					<div class="companies__logo">
+						<img src="img/s7airlines.png" alt="">
+					</div>
+					<div class="companies__logo">
+						<img src="img/s7airlines.png" alt="">
+					</div>
+					<div class="companies__logo">
+						<img src="img/s7airlines.png" alt="">
+					</div>
+					<div class="companies__logo">
+						<img src="img/s7airlines.png" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- center -->
+	<div class="center">
+		<!-- desc -->
+		<div class="desc">
+			<div class="desc__ask">КАК КУПИТЬ АВИАБИЛЕТЫ?</div>
+			<div class="desc__title js-desc">Покупка билетов <a class="is-disabled" href="#" data-items="js-desc-item-2">онлайн</a> и <a href="#" data-items="js-desc-item-1">за наличные</a><br>стала простой и удобной как никогда</div>
+			<div class="desc__list">
+				<div class="desc__item desc__item_1">
+					<div class="desc__ico">
+						<i class="icon icon-promo-6"></i>
+					</div>
+					<div class="desc__text">Введите параметры поиска авиабилетов - откуда, куда и когда</div>
+				</div>
+				<div class="desc__item desc__item_2">
+					<div class="desc__ico">
+						<i class="icon icon-promo-7"></i>
+					</div>
+					<div class="desc__text">Выберите наиболее удобный вариант перелета - цена, стыковка и т.д.</div>
+				</div>
+				<div class="desc__item desc__item_3">
+					<div class="desc__ico">
+						<i class="icon icon-promo-8"></i>
+					</div>
+					<div class="desc__text">Внесите паспортные данные пассажиров и контакты покупателя</div>
+				</div>
+				<div class="desc__item desc__item_4 js-desc-items js-desc-item-1">
+					<div class="desc__ico">
+						<i class="icon icon-promo-9"></i>
+					</div>
+					<div class="desc__text">Сохраните коды брони и заказа и сообщите их <a class="pseudo js-popup-btn" data-popup="js-popup-map" href="#">в&nbsp;офисе</a></div>
+				</div>
+				<div class="desc__item desc__item_5 js-desc-items js-desc-item-1">
+					<div class="desc__ico">
+						<i class="icon icon-promo-10"></i>
+					</div>
+					<div class="desc__text">Оплатите наличными и получите билеты на руки,  а бонусы - на счет</div>
+				</div>
+				<div class="desc__item desc__item_6 js-desc-items js-desc-item-2">
+					<div class="desc__ico">
+						<i class="icon icon-promo-14"></i>
+					</div>
+					<div class="desc__text">Оплатите билеты на платежной странице Альфа-банка</div>
+				</div>
+				<div class="desc__item desc__item_7 js-desc-items js-desc-item-2">
+					<div class="desc__ico">
+						<i class="icon icon-promo-15"></i>
+					</div>
+					<div class="desc__text">Получите Ваши билеты на почту, а бонусы - на личный счет</div>
+				</div>
+			</div>
+		</div>
+		<!-- desc -->
+		<div class="desc">
+			<div class="desc__ask">ИЩЕТЕ ДЕШЕВЫЕ АВИАБИЛЕТЫ?</div>
+			<div class="desc__title"><a class="js-desc-toggle" href="#">Бронирование авиабилетов онлайн<i class="icon icon-arr-down-think"></i></a></div>
+			<div class="desc__content">
+				<p>ТОО «Biletus» осуществляет продажу электронных авиабилетов.</p>
+				<p>Благодаря интеграции в современные системы бронирования (GDS), наш сервис позволяет купить авиабилеты через интернет на рейсы более 500 казахстанских и зарубежных авиакомпаний, таких как Air Astana, Lufthansa, Air France, British Airways, Аэрофлот, S7 Airlines и сотни других.</p>
+				<p>Система поиска и бронирования авиабилетов Biletus.kz позволит найти оптимальный вариант перелета и цену по любому заданному направлению и дате. Бронирование авиабилетов онлайн – это выбор деловых людей и тех, кто привык держать все под контролем.</p>
+				<p>Если Вы хотите купить авиабилеты онлайн, обратитесь в компанию «Biletus». Получить дополнительную информацию по вопросам бронирования и оплаты билетов авиакомпаний Air Astana, KLM, Международные Авиалинии Украины, SCAT Airlines и других Вы можете по бесплатному со всех номеров РК телефону - 8 800 070 8 800.</p>
+				<div class="desc__more js-desc-more">
+					<p><b>Экономьте время.</b> Для покупки авиабилетов с помощью нашего сервиса Вам потребуется не более 10 минут. С Билетусом Вам больше не придется тратить свое драгоценное время на поездку в аэропорт или авиакассу, система позволяет забронировать, купить и оформить билет за считанные минуты.</p>
+					<p><b>Выбрать и оформить авиабилет — просто.</b> На Билетусе можно произвести бронирование авиабилетов в одну сторону, туда и обратно или составить сложный маршрут. На этапе заказа авиабилета наша система позволяет выбрать желаемый класс перелета. Уникальная форма фильтров позволит тщательно подобрать авиамаршрут — выбрать удобное время вылета и прилета, продолжительность перелета и количество пересадок. Кроме того, при выборе авиарейса вы можете выбрать авиакомпанию, которой отдаете наибольшее предпочтение (например, авиабилеты от Air Astana).</p> 
+					<p><b>Дополнительные услуги.</b> C помощью нашего сервиса вы можете не только произвести бронирование и покупку авиабилетов, но и получить дополнительную информацию – погоду в аэропортах вылета и прилета, оценить задержки рейсов на основе данных наблюдения за последние несколько месяцев и многое другое!</p>
+					<p>Заказ и бронирование авибилетов с помощью Билетуса — это начало вашего яркого и запоминающегося путешествия!</p>
+				</div>
+			</div>
 		</div>
 	</div>
 	<!-- footer -->
-	<footer class="n-footer">
+	<footer class="footer">
 		<!-- center -->
-		<div class="center">Передача данных защищена сертификатом безопасности SSL GeoTrust TrueBusinessID with Extended Validation. Мы не сохраняем данные Вашей карты.</div>
+		<div class="center">
+			<div class="footer__row">
+				<div class="footer__col">
+					<div class="footer__title">СПРАВОЧНАЯ ИНФОРМАЦИЯ</div>
+					<ul class="footer__nav">
+						<li><a href="#">Как купить авиабилеты?</a></li>
+						<li><a href="#">Как сделать возврат?</a></li>
+						<li><a href="#">Как оплатить?</a></li>
+						<li><a href="#">Остальные вопросы и ответы</a></li>
+						<li><a class="pseudo" href="#">Задайте свой вопрос</a></li>
+					</ul>
+					<div class="footer__text">* по нашей версии</div>
+				</div>
+				<div class="footer__col">
+					<div class="footer__title">Служба заботы о клиентах</div>
+					<ul class="footer__nav">
+						<li>8 800 070 8 800</li>
+						<li><div class="footer__text">(бесплатно с мобильных и городских)</div></li>
+						<li><a class="pseudo js-popup-btn" data-popup="js-popup-feedback" href="#">Напишите нам</a></li>
+						<li><a class="pseudo" href="#">Онлайн-поддержка</a></li>
+					</ul>
+					<div class="footer__social">
+						<div class="footer__text">Biletus в соцмедиа</div>
+						<!-- social -->
+						<div class="social">
+							<a href="#"><i class="icon icon-facebook"></i></a>
+							<a href="#"><i class="icon icon-vk"></i></a>
+							<a href="#"><i class="icon icon-twitter"></i></a>
+							<a href="#"><i class="icon icon-google"></i></a>
+							<a href="#"><i class="icon icon-email"></i></a>
+							<a href="#"><i class="icon icon-mail"></i></a>
+						</div>
+					</div>
+				</div>
+				<div class="footer__col">
+					<div class="footer__title">ДОПОЛНИТЕЛЬНЫЕ Сервисы</div>
+					<ul class="footer__nav">
+						<li><a href="#">Погода в аэропортах</a></li>
+						<li><a href="#">Статистика рейсов</a></li>
+						<li><a href="#">Помощь детскому дому</a><i class="icon icon-heart"></i></li>
+					</ul>
+				</div>
+				<div class="footer__col">
+					<div class="footer__title">ДОКУМЕНТы</div>
+					<ul class="footer__nav">
+						<li><a href="#">Политика конфиденциальности</a></li>
+						<li><a href="#">Публичная оферта</a></li>
+						<li><a href="#">Правила IATA</a></li>
+						<li><a href="#">Использование Cookies</a></li>
+					</ul>
+				</div>
+				<div class="footer__col">
+					<div class="footer__title">2015 ТОО «Билетус»</div>
+					<ul class="footer__nav">
+						<li><a class="pseudo js-popup-btn" data-popup="js-popup-map" href="#">Адрес офиса на карте</a></li>
+					</ul>
+					<div class="footer__partners">
+						<div class="footer__text">Официально аккредитован</div>
+						<img src="img/iata.png" width="111" alt="">
+						<div class="footer__text">Принимаем к оплате</div>
+						<img src="img/visa.png" width="57" alt="">
+						<img src="img/mastercard.png" width="44" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
 	</footer>
+	<!-- social responsibility -->
+	<a href="#" class="soc-resp">olding.kz -- наша социальная ответственность. Казахстанская команда проекта Стэнфордского университета Folding@home. </a>
 </div>
-<!-- END out-->
+<!-- popup -->
+<div class="popup popup_w842 js-popup js-popup-map">
+	<div class="popup__in">
+		<button class="popup__close js-popup-close">
+			<i class="icon icon-close-think"></i>
+		</button>
+		<div class="popup__title">Адрес офиса на карте</div>
+		<div class="popup__map">
+			<img src="http://placehold.it/800x490" style="display: block;" alt="">
+		</div>
+	</div>
+</div>
+<!-- popup -->
+<div class="popup popup_w600 js-popup js-popup-feedback">
+	<div class="popup__in">
+		<button class="popup__close js-popup-close">
+			<i class="icon icon-close-think"></i>
+		</button>
+		<div class="popup__title">Обратиться в службу заботы</div>
+		<!-- form -->
+		<div class="form form_simple">
+			<div class="form__l">
+				<div class="form__col">
+					<!-- field -->
+					<div class="field">
+						<div class="field__label">ИМЯ</div>
+						<div class="field__in">
+							<input class="input" type="text">
+						</div>
+					</div>
+				</div>
+				<div class="form__col">
+					<!-- field -->
+					<div class="field is-error">
+						<div class="field__label">E-mail (для ответа)</div>
+						<div class="field__in">
+							<input class="input" type="text">
+							<i class="icon icon-exclamation"></i>
+						</div>
+						<div class="field__error">Обязательное поле</div>
+					</div>
+				</div>
+			</div>
+			<div class="form__l">
+				<div class="form__col">
+					<!-- field -->
+					<div class="field">
+						<div class="field__label">ТЕМА ОБРАЩЕНИЯ</div>
+						<div class="field__in">
+							<input class="input" type="text">
+						</div>
+					</div>
+				</div>
+				<div class="form__col">
+					<!-- field -->
+					<div class="field">
+						<div class="field__label">КАТЕГОРИЯ (необязательно)</div>
+						<div class="field__in">
+							<!-- select -->
+							<div class="select">
+								<div class="select__in">
+									<div class="select__head">
+										<div class="select__val">
+											<div class="select__cell">Общие вопросы</div>
+										</div>
+										<div class="select__arr">
+											<i class="icon icon-arr-down"></i>
+										</div>
+									</div>
+									<div class="select__list">
+										<div class="select__item">
+											<div class="select__cell">Загран. паспорт</div>
+										</div>
+										<div class="select__item">
+											<div class="select__cell">Загран. паспорт</div>
+										</div>
+										<div class="select__item">
+											<div class="select__cell">Загран. паспорт</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="form__area">
+				<!-- field -->
+				<div class="field">
+					<div class="field__label">СООБЩЕНИЕ</div>
+					<div class="field__in">
+						<textarea class="textarea"></textarea>
+					</div>
+				</div>
+			</div>
+			<!-- wrap-btn -->
+			<div class="wrap-btn wrap-btn_mb0">
+				<button class="btn btn_small">Отправить</button>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- scroll-top -->
+<div class="scroll-top js-scroll-top">
+	<div class="scroll-top__ico"><!-- 
+		<svg width="14px" height="15px" viewBox="0 0 1559 1473" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+		    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+		        <g id="up" fill="#FFFFFF">
+		            <g id="g3027" transform="translate(779.652542, 736.644100) scale(1, -1) translate(-779.652542, -736.644100) translate(0.152542, 0.644100)">
+		                <path d="M1558,693 C1558,659 1545.66667,629 1521,603 L1446,528 C1420.66667,502.666667 1390.33333,490 1355,490 C1319,490 1289,502.666667 1265,528 L971,821 L971,117 C971,82.3333333 958.5,54.1666667 933.5,32.5 C908.5,10.8333333 878.333333,0 843,0 L715,0 C679.666667,0 649.5,10.8333333 624.5,32.5 C599.5,54.1666667 587,82.3333333 587,117 L587,821 L293,528 C269,502.666667 239,490 203,490 C167,490 137,502.666667 113,528 L38,603 C12.6666667,628.333333 4.54747351e-13,658.333333 4.54747351e-13,693 C4.54747351e-13,728.333333 12.6666667,758.666667 38,784 L689,1435 C712.333333,1459.66667 742.333333,1472 779,1472 C815,1472 845.333333,1459.66667 870,1435 L1521,784 C1545.66667,758 1558,727.666667 1558,693 L1558,693 Z" id="path3029"></path>
+		            </g>
+		        </g>
+		    </g>
+		</svg> -->
+		<i class="icon icon-arr-top"></i>
+	</div>
+</div>
 <!-- load scripts -->
 <script src="js/lib/head.js" data-headjs-load="js/init.js"></script>
 </body>

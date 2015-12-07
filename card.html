@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Template</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="format-detection" content="telephone=no">
+	<!-- theme color for android 5.0 -->
+	<meta name="theme-color" content="#fff"> 
+	<link rel="icon" type="image/png" href="img/favicon.png">
+	<!-- <meta name="viewport" content="width=1200"> -->
+	<!-- <meta name="viewport" content="initial-scale=1, user-scalable=no"> -->
+	<link rel="stylesheet" media="all" href="css/screen.css" >
+	<link rel="stylesheet" media="all" href="css/style.css" >
+	<link rel="stylesheet" media="all" href="css/new.css" >
+	<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
+</head>
+<body>
+<!-- BEGIN  out-->
+<div class="out">
+	<!-- center -->
+	<div class="center">
+		<!-- head -->
+		<header class="head">
+			<a href="#" class="head__link">Отказаться от платежа</a>
+			<div class="head__right">
+				<a href="#" class="logo-a"></a>
+				<div class="head__text">Безопасность этой транзакции <a href="#">гарантирована</a></div>
+			</div>
+		</header>
+		<!-- card -->
+		<div class="cards">
+			<form>
+				<div class="cards__in">
+					<div class="cards__left">
+						<div class="cards__row">Номер карты (16 цифр)</div>
+						<div class="cards__row">Срок действия карты (месяц. год)</div>
+						<div class="cards__row">Владелец карты (латиницей)</div>
+					</div>
+					<div class="cards__right">
+						<div class="cards__field">
+							<div class="cards__inf">Сумма к оплате <span>210 100т</span></div>
+							<div class="cards__inf is-right">Код заказа <span>А453177</span></div>
+						</div>
+						<div class="cards__wrap">
+							<div class="card">
+								<label class="card__label">card number</label>
+								<div class="card__row">
+									<input type="text" placeholder="xxxx  xxxx  xxxx  xxxx">
+								</div>
+								<div class="card__row card__row_term">
+									<label class="card__label">EXPIRES END</label>
+									<div class="term"><input type="text" placeholder="mm"></div>
+									<div class="term"><input type="text" placeholder="yy"></div>
+								</div>
+								<div class="card__row card__row_name">
+									<label class="card__label">cardholder name</label>
+									<input type="text" placeholder="IVAN IVANOV">
+								</div>
+							</div>
+							<div class="card card_cvv">
+								<div class="cvv">
+									<div class="cvv__text">
+										<p>CVV2/</p>
+										<p>CVC2/</p>
+										<p>CID</p>
+									</div>
+									<div class="cvv__input">
+										<input type="text" placeholder="xxx">
+									</div>
+								</div>
+								<div class="timer">Осталось времени для оплаты <span class="timer__counter">14:47</span></div>
+								<div class="card__inf">Это 3 цифры на обороте карты</div>
+							</div>
+						</div>
+						<div class="operations">
+							<div class="operations__text is-error">Номер карты указан неверно</div>
+							<div class="operations__text is-error">Срок действия карты указан неверно</div>
+							<div class="operations__text">Операция отклонена. Проверьте введенные данные, достаточность средств на карте и повторите операцию</div>
+							<div class="operations__text">Происходит переадресация...</div>
+						</div>
+					</div>
+				</div>
+				<button class="btn" type="submit">Оплатить</button>
+			</form>
+		</div>
+	</div>
+	<!-- footer -->
+	<footer class="n-footer">
+		<!-- center -->
+		<div class="center">
+			<div class="inf">
+				<div class="inf__item">Передача данных защищена сертификатом безопасности SSL GeoTrust TrueBusinessID with Extended Validation. Мы не сохраняем данные Вашей карты.</div>
+				<div class="inf__item">При возникновении вопросов обращайтесь в Службу Заботы о клиентах по номеру телефона 8 800 070 8 800. Бесплатно с любого телефона на территории РК.</div>
+			</div>
+		</div>
+	</footer>
+</div>
+<!-- END out-->
+<!-- load scripts -->
+<script src="js/lib/head.js" data-headjs-load="js/init.js"></script>
+</body>
+</html>
